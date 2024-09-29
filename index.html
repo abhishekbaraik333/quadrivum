@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Peer Advisory Council</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -57,10 +57,14 @@
             <!-- mobile navbar -->
             <nav id="mobile-nav"
                 class="fixed z-[99] inset-x-0 top-0 h-screen bg-black transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col gap-5 justify-center items-center text-2xl text-secondary lg:text-lg">
-                <div class="text-primary absolute right-10 top-10" id="close">x</div>
-                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">Meet The Team </a>
-                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">About Us</a>
-                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">Gallery</a>
+                <div class="text-secondary absolute right-10 top-10" id="close">x</div>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">One to One Coaching</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">Peer Advisory Council</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">Quadrivium Network in
+                    Auction</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">Blog</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">Meet Julie</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl   " href="#">Contact</a>
             </nav>
         </div>
     </header>
@@ -72,15 +76,19 @@
             <div class="h-[86vh] mx-auto flex justify-center relative w-[98%] overflow-hidden">
                 <video src="./bg-video.mp4" class="h-full w-full object-cover rounded-xl" muted autoplay loop></video>
                 <div class="overlay absolute z-0 bg-zinc-800 opacity-50 h-full w-full rounded-xl"></div>
-                <div class="hero-content px-4 absolute bottom-0 rounded-xl h-[50%] w-full">
-                    <div class="px-8 ">
-                        <h1 class="text-white text-7xl font-semibold">
+                <div class="hero-content px-4 absolute bottom-0 rounded-xl h-[55%] lg:h-[50%] w-full">
+                    <div class="px-2 lg:px-8 ">
+                        <div class="flex items-center gap-2">
+                            <div class="h-2 w-2 bg-white rounded-full"></div>
+                            <span class="text-white font-bold uppercase">Business Coaching</span>
+                        </div>
+                        <h1 class="text-white text-4xl lg:text-7xl font-semibold">
                             Peer Advisory Council
                         </h1>
-                        <h2 class="text-3xl text-white mt-3 font-semibold">
+                        <h2 class="text-xl lg:text-3xl text-white mt-3 font-semibold">
                             Where Visionary Minds Converge
                         </h2>
-                        <p class="text-white mt-5 text-lg font-medium">
+                        <p class="text-white mt-5 text-sm lg:text-lg font-medium">
                             As Einstein said, "We can't solve the problems using the same <br> kind of thinking we used
                             when we created them."
                         </p>
@@ -91,12 +99,12 @@
             </div>
         </section>
 
-        <section class="flex justify-between py-20 px-[5%] bg-primary">
+        <section class="flex flex-col lg:flex-row justify-between py-20 px-[5%] bg-primary">
             <div class="lg:w-1/2 flex items-start">
                 <h3 class="text-secondary text-4xl font-semibold">YOUR WORST DECISIONS ARE <br> THOSE THAT YOU MAKE ALONE
                 </h3>
             </div>
-            <div class="w-1/2 pl-[10%]">
+            <div class="lg:w-1/2 lg:pl-[10%] mt-10 lg:mt-0">
                 <p class="text-lg text-white">
                     If you have plenty of unbiased and brilliant people to talk to without any conflict of interest when
                     it comes to your business, maybe this group isn't for you.
@@ -113,7 +121,7 @@
             <h3 class="text-4xl font-bold text-primary text-center">
                 Benefits for the CEO
             </h3>
-            <div class="card-container ">
+            <div class="card-container">
                 <div class="card">
                     <div class="card-img">
                         <img src="./7aefef61aef2f525f88f9ed020c5858f8759c5ec-25x24.svg" alt="">
@@ -170,15 +178,15 @@
             </div>
         </section>
 
-        <section class="faq-section bg-primary relative flex items-start pt-[5%] pb-[15%] px-[5%] mt-32">
+        <section class="faq-section bg-primary relative flex flex-col lg:flex-row items-start pt-[5%] pb-[15%] px-[5%] mt-32">
             <div class="lg:w-1/2">
                 <div class="">
-                    <h3 class="text-secondary font-semibold text-6xl leading-[5rem]">Is a Peer Advisory Council for you?
+                    <h3 class="text-secondary font-semibold text-4xl lg:text-6xl  lg:leading-[5rem]">Is a Peer Advisory Council for you?
                     </h3>
                 </div>
             </div>
 
-            <div class="faq-container lg:w-1/2 relative z-[2]">
+            <div class="faq-container lg:w-1/2 relative z-[2] mt-5 lg:mt-0">
                 <div class="faq-item">
                     <button class="faq-question">WHAT IS IT? <i class="fa-solid fa-angle-down cross"></i></button>
                     <div class="faq-answer">
@@ -236,18 +244,15 @@
                 </div>
                 
             </div>
-
-
-
         </section>
 
-        <section class="flex justify-between py-32 px-[5%] bg-white">
+        <section class="flex flex-col lg:flex-row justify-between py-32 px-[5%] bg-white">
             <div class="lg:w-1/2 flex items-start">
                 <h3 class="text-primary text-4xl font-semibold uppercase">Proven Effective <br> time and time again
                 </h3>
             </div>
-            <div class="w-1/2 pl-[10%]">
-                <p class="text-lg text-primary">
+            <div class="lg:w-1/2 lg:pl-[10%]">
+                <p class="text-lg text-primary mt-10 lg:mt-0">
                     Trained in Tony's proven methodologies and techniques, Tony Robbins Business Results Coaches have helped thousands of businesses and executive management teams gain greater clarity and unprecedented growth. Yours could be next.
                 </p>
                 <button class="py-3 px-6 text-white rounded-full bg-primary mt-10 hover:bg-transparent hover:text-primary duration-300 border-[1px] border-primary">Schedule your
@@ -256,7 +261,7 @@
             </section>
         </main>
 
-        <footer class="bg-primary flex px-[10%] py-20 gap-20">
+        <footer class="bg-primary flex flex-col lg:flex-row px-[5%] lg:px-[10%] py-20 gap-20">
             <div>
                 <h4 class="text-secondary text-4xl font-medium">Browse Our Website</h4>
                 <div class="divider"></div>
@@ -306,21 +311,21 @@
             </div>
 
             <div>
-                <h4 class="text-secondary text-4xl font-medium">Our <br> Location </h4>
+                <h4 class="text-secondary text-4xl font-medium">Our <br class="hidden lg:block"> Location </h4>
                 <div class="divider"></div>
                 <div class="mt-8">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.5461818453114!2d-84.3812481!3d39.2531724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884053c41b6b57c1%3A0x83f8ba4e1b9ba9a9!2s4555%20Lake%20Forest%20Dr%20Suite%20650%2C%20Cincinnati%2C%20OH%2045242%2C%20USA!5e0!3m2!1sen!2sin!4v1727641266842!5m2!1sen!2sin" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.5461818453114!2d-84.3812481!3d39.2531724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884053c41b6b57c1%3A0x83f8ba4e1b9ba9a9!2s4555%20Lake%20Forest%20Dr%20Suite%20650%2C%20Cincinnati%2C%20OH%2045242%2C%20USA!5e0!3m2!1sen!2sin!4v1727641266842!5m2!1sen!2sin" class="w-full lg:w-[220px]" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="flex flex-col justify-center">
+            <div class="flex lg:flex-col justify-center items-center">
                 <a target="_blank" href="https://www.facebook.com/QuadriviumAdvisorsInc/">
-                <img src="./Facebook-transparent (1).png" class="w-[100px]" alt="">
+                <img src="./Facebook-transparent (1).png" class="w-[60px] lg:w-[100px]" alt="">
             </a>
                 <a target="_blank" href="https://www.instagram.com/julie.rowland45236/">
-                <img src="./Instagram-transparent.png" class="w-[100px]" alt="">
+                <img src="./Instagram-transparent.png" class="w-[60px] lg:w-[100px]" alt="">
             </a>
                 <a target="_blank" href="https://www.linkedin.com/company/quadrivium-advisors-inc/">
-                <img src="./LinkedIn-transparent.png" class="w-[100px]" alt="">
+                <img src="./LinkedIn-transparent.png" class="w-[60px] lg:w-[100px]" alt="">
             </a>
             </div>
         </footer>

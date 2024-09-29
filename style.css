@@ -154,3 +154,16 @@ html,body{
     color: white;
     margin-top: 5px;
 }
+
+@media (max-width:640px) {
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 5%;
+    }
+    .faq-question{
+        font-size: 18px;
+    }
+    .faq-answer p{
+        font-size: 14px;
+    }
+}
