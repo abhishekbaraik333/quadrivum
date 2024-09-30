@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.getElementById("hamburger");
   const mobileNav = document.getElementById("mobile-nav");
@@ -25,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   hamburger.addEventListener("click", () => {
     mobileNav.classList.toggle("active");
+    hamburger.classList.toggle('active');
+
   });
   close.addEventListener("click", () => {
     mobileNav.classList.toggle("active");
