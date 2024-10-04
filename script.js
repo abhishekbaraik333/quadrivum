@@ -137,6 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
       start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
+  
   gsap.from(".para3", {
     y: 150,
     delay: 0.1,
@@ -144,6 +145,56 @@ document.addEventListener("DOMContentLoaded", function () {
     opacity: 0,
     scrollTrigger: {
       trigger: ".para3", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  gsap.from(".academy-heading", {
+    y: 150,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".academy-heading", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  gsap.from(".academy-para2", {
+    y: 150,
+    delay:0.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".academy-para2", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+  gsap.from(".academy-para", {
+    y: 150,
+    delay:0.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".academy-para", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  gsap.from(".academy-image", {
+    delay: 0.1,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".academy-image", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+  gsap.from(".academy-image2", {
+    delay: 0.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".academy-image2", // Trigger animation when .box enters the viewport
       start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
