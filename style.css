@@ -103,15 +103,22 @@ header,
   padding: 10px;
   border-radius: 8px;
   overflow: hidden;
+  gap: 20px;
 }
 
 .faq-item {
-  border-bottom: 1px solid #cfcfd2;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 0 30px;
+  border-bottom: 1px solid #ddeffb;
+  overflow: hidden;
+  width: 100%;
+  transition: max-height 0.8s ease;
 }
 
 .faq-question {
   color: #fff;
-  font-family: "satoshi-bold", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   width: 100%;
   padding: 20px 0;
   text-align: left;
@@ -119,8 +126,8 @@ header,
   outline: none;
   cursor: pointer;
   font-size: 20px;
-  font-weight: 600;
-  transition: max-height 0.5s ease;
+  font-weight: 500;
+  /* transition: max-height 1s ease; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,26 +135,25 @@ header,
 }
 
 .faq-answer {
-  font-family: "satoshi-reg", sans-serif;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease;
+  transition: max-height 0.8s ease;
 }
 
 .faq-answer p {
   padding: 15px 0;
   color: #fff;
   margin: 0;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 800px; /* Adjust as needed */
-  transition: max-height 0.5s ease;
+  max-height: 800px; /* Adjust based on content length */
 }
 
 .cross {
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
 }
 
 .faq-item.active .cross {
