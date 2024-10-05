@@ -208,4 +208,47 @@ document.addEventListener("DOMContentLoaded", function () {
       start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
+
+  gsap.from(".ti-1", {
+    x: -150,
+    delay:0.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".ti-1", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  gsap.from(".ti-2", {
+    x: 150,
+    delay:0.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".ti-2", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+  gsap.from(".ti-3", {
+    x: -150,
+    delay:0.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".ti-3", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  gsap.from(".ti-4", {
+    x: 150,
+    delay:0.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".ti-4", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
 });
