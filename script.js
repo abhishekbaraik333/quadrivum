@@ -198,4 +198,14 @@ document.addEventListener("DOMContentLoaded", function () {
       start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
+
+  gsap.from(".julie", {
+    delay: 1,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".academy-image2", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
 });
