@@ -71,6 +71,16 @@ document.addEventListener("DOMContentLoaded", function () {
       start: "top 80%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
+
+  gsap.from(".why-join", {
+    x: -120,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".why-join", // Trigger animation when .box enters the viewport
+      start: "top 80%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
   gsap.from(".faq-heading", {
     x: -120,
     opacity: 0,
