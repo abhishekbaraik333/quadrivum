@@ -117,7 +117,7 @@ header,
   border-bottom: 1px solid #ddeffb;
   overflow: hidden;
   width: 100%;
-  transition: max-height 0.8s ease;
+  transition: height 1.5s ease;
 }
 
 .faq-question {
@@ -131,17 +131,17 @@ header,
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
-  /* transition: max-height 1s ease; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: max-height 1.5s ease;
   gap: 10px;
 }
 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.8s ease;
+  transition: max-height 1.5s ease;
 }
 
 .faq-answer p {
@@ -157,7 +157,7 @@ header,
 }
 
 .cross {
-  transition: transform 0.6s ease;
+  transition: transform 2s ease;
 }
 
 .faq-item.active .cross {
