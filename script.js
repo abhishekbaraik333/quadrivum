@@ -280,3 +280,12 @@ cardControllers.forEach(controller => {
   })
 })
 
+document.querySelector('.select-selected').addEventListener('click', function() {
+  document.querySelector('.select-options').classList.toggle('show');
+});
+
+window.addEventListener('click', function(e) {
+  if (!e.target.matches('.select-selected')) {
+    document.querySelector('.select-options').classList.remove('show');
+  }
+});
