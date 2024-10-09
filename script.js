@@ -289,3 +289,85 @@ window.addEventListener('click', function(e) {
     document.querySelector('.select-options').classList.remove('show');
   }
 });
+
+
+// Wait until the document is ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Attach a click event listener to the link
+  document.querySelector('a[href="#member1"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor click behavior
+
+    // Get the target element (li element with id 'member1')
+    const targetElement = document.getElementById('member1');
+
+    // Calculate the center position
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+
+    // Smoothly scroll to the center position
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+// Wait until the document is ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Attach a click event listener to the link
+  document.querySelector('a[href="#member2"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor click behavior
+
+    // Get the target element (li element with id 'member1')
+    const targetElement = document.getElementById('member2');
+
+    // Calculate the center position
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+
+    // Smoothly scroll to the center position
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+// Wait until the document is ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Attach a click event listener to the link
+  document.querySelector('a[href="#member3"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor click behavior
+
+    // Get the target element (li element with id 'member1')
+    const targetElement = document.getElementById('member3');
+
+    // Calculate the center position
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+
+    // Smoothly scroll to the center position
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+// Wait until the document is ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Attach a click event listener to the link
+  document.querySelector('a[href="#member4"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor click behavior
+
+    // Get the target element (li element with id 'member1')
+    const targetElement = document.getElementById('member4');
+
+    // Calculate the center position
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+
+    // Smoothly scroll to the center position
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
