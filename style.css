@@ -462,7 +462,7 @@ ul:where([role="list"]) {
   display: none;
   position: absolute;
   background-color: #fff;
-  width: 140%;
+  width: 130%;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -492,11 +492,6 @@ ul:where([role="list"]) {
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
-
-
-
-
-
 
 @media (max-width: 640px) {
   .card-container {
