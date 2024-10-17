@@ -372,7 +372,7 @@ ul:where([role="list"]) {
 
 .card__back {
   position: absolute;
-  padding: 2em 2em 2.5em 2em;
+  padding: 2em 2em 3.5em 2em;
   inset: 0;
   transition: 
     transform 450ms ease,
@@ -462,7 +462,7 @@ ul:where([role="list"]) {
   display: none;
   position: absolute;
   background-color: #fff;
-  width: 100%;
+  width: 140%;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -475,6 +475,8 @@ ul:where([role="list"]) {
   display: block;
   color: #333;
   text-decoration: none;
+
+  border-right: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -487,7 +489,8 @@ ul:where([role="list"]) {
 }
 
 .select-options.show {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 

@@ -263,8 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Inspiration -  Frontend Mentor
-// https://www.frontendmentor.io/challenges/myteam-multipage-website-mxlEauvW
+
 const cardControllers = document.querySelectorAll("[data-card-controller]");
 
 cardControllers.forEach(controller => {
@@ -293,81 +292,29 @@ window.addEventListener('click', function(e) {
 
 // Wait until the document is ready
 document.addEventListener('DOMContentLoaded', function() {
-  // Attach a click event listener to the link
-  document.querySelector('a[href="#member1"]').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor click behavior
+  // Get all anchor tags inside .select-options
+  const links = document.querySelectorAll('.select-options a');
 
-    // Get the target element (li element with id 'member1')
-    const targetElement = document.getElementById('member1');
+  // Loop through each link and attach a click event listener
+  links.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default anchor click behavior
 
-    // Calculate the center position
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
+      // Get the target element's ID from the href attribute (e.g., #member1)
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
 
-    // Smoothly scroll to the center position
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  });
-});
-// Wait until the document is ready
-document.addEventListener('DOMContentLoaded', function() {
-  // Attach a click event listener to the link
-  document.querySelector('a[href="#member2"]').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor click behavior
+      // Calculate the center position of the target element
+      if (targetElement) {
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
 
-    // Get the target element (li element with id 'member1')
-    const targetElement = document.getElementById('member2');
-
-    // Calculate the center position
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
-
-    // Smoothly scroll to the center position
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  });
-});
-// Wait until the document is ready
-document.addEventListener('DOMContentLoaded', function() {
-  // Attach a click event listener to the link
-  document.querySelector('a[href="#member3"]').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor click behavior
-
-    // Get the target element (li element with id 'member1')
-    const targetElement = document.getElementById('member3');
-
-    // Calculate the center position
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
-
-    // Smoothly scroll to the center position
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-  });
-});
-// Wait until the document is ready
-document.addEventListener('DOMContentLoaded', function() {
-  // Attach a click event listener to the link
-  document.querySelector('a[href="#member4"]').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default anchor click behavior
-
-    // Get the target element (li element with id 'member1')
-    const targetElement = document.getElementById('member4');
-
-    // Calculate the center position
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - (window.innerHeight / 2) + (targetElement.offsetHeight / 2);
-
-    // Smoothly scroll to the center position
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
+        // Smoothly scroll to the center position
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     });
   });
 });
