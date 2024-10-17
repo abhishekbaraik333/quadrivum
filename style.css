@@ -446,7 +446,7 @@ ul:where([role="list"]) {
 }
 
 .select-selected {
-  background-color: #f0f0f0;
+  background-color: #0C3C60;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -455,7 +455,7 @@ ul:where([role="list"]) {
 }
 
 .select-selected:hover {
-  background-color: #e0e0e0;
+  background-color: #144e7a;
 }
 
 .select-options {
