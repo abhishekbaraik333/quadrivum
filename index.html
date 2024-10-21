@@ -30,13 +30,13 @@
 </head>
 
 <body>
-    <header class="fixed top-0 w-full z-[1000]">
+
+    <!-- <header class="fixed top-0 w-full z-[1000]">
 
         <div class="py-6 flex items-center justify-between px-[4%]">
             <a href="./index.html">
                 <img src="./images/logo.webp" width="200" alt="">
             </a>
-            <!-- desktop navbar -->
             <nav class="desktop-menu text-white hidden lg:flex gap-5 items-center">
                 <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium" href="./business-academy.html">One to One Coaching </a>
                 <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium" href="./index.html">Peer Advisory Council</a>
@@ -52,7 +52,6 @@
                 <span class="w-6 h-0.5 bg-secondary transition-all duration-300"></span>
             </button>
 
-            <!-- mobile navbar -->
             <nav id="mobile-nav"
                 class="fixed z-[99] p-4 pt-10 inset-x-0 top-20 h-1/2 bg-black transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col gap-5 justify-start items-start text-2xl text-white lg:text-lg">
                 <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="./business-academy.html">One to One Coaching</a>
@@ -63,16 +62,97 @@
                 <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="#">Contact</a>
             </nav>
         </div>
-    </header>
+    </header> -->
 
+
+    <header class="fixed top-0 w-full z-[1000]">
+
+        <div class="py-2 flex items-center justify-between px-[4%]">
+
+            <div class="lg:block hidden lg:w-1/3 flex items-center gap-4 text-primary font-semibold">
+                <div class="flex flex-col gap-2">
+                    <a href="tel:(513) 659-5728" class="hover:underline">(513) 659-5728</a>
+                    <a href="mailto: julie@quadrivium-advisors.com" class="hover:underline">
+                        julie@quadrivium-advisors.com</a>
+                </div>
+
+
+            </div>
+
+            <a class="lg:w-1/3" href="./index.html">
+                <img src="./images/logo.webp" class="lg:w-[550px] md:w-[400px] w-[250px]" alt="">
+            </a>
+
+            <div class="lg:w-1/3 lg:block hidden">
+                <p class="text-end text-primary font-semibold">
+                    4555 Lake Forest Drive <br>
+                    Suite 650 <br>
+                    Cincinnati, Ohio 45242
+                </p>
+            </div>
+
+
+
+
+
+            <button id="hamburger" class="lg:hidden flex flex-col gap-1.5 relative z-[90]">
+                <span class="w-6 h-0.5 bg-primary active transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-primary transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-primary transition-all duration-300"></span>
+            </button>
+
+            <!-- mobile navbar -->
+            <nav id="mobile-nav"
+                class="fixed z-[99] p-4 pt-5 inset-x-0 top-16 md:top-24 h-[60%] bg-black transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col gap-5 justify-start items-start text-2xl text-primary lg:text-lg">
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  "
+                    href="./business-academy.html">One to One Coaching</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl  font-semibold " href="./index.html">Peer Advisory
+                    Council</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  "
+                    href="./connections.html">Quadrivium Connections</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="#">Blog</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="./meet-julie.html">Meet
+                    Julie</a>
+                <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="#">Contact</a>
+                <div class="">
+                    <a href="https://bit.ly/30minutecallwithjulie" target="_blank"
+                        class="py-2 px-3 text-white rounded-full bg-primary hover:bg-transparent hover:text-primary duration-300 border-[1px] border-primary text-base">Schedule
+                        a call</a>
+                </div>
+            </nav>
+        </div>
+        <div>
+            <!-- desktop navbar -->
+            <nav
+                class="desktop-menu bg-primary text-white py-5 hidden lg:flex gap-5 items-center justify-between px-20">
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium"
+                    href="./index.html">Peer Advisory
+                    Council</a>
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium mr-5"
+                    href="./connections.html">Quadrivium Connections</a>
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium"
+                    href="./business-academy.html">One
+                    to One Coaching </a>
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium mr-5"
+                    href="./meet-julie.html">Meet
+                    Julie</a>
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium mr-5"
+                    href="#">Contact</a>
+            </nav>
+
+
+        </div>
+    </header>
     <main>
 
         <!-- hero -->
-        <section class="hero h-[100vh] pt-[6rem]">
+        <section class="hero h-[100vh] pt-[5.3rem] md:pt-[7rem] lg:pt-[11.7rem]">
             <div class="h-[98%] my-auto mx-auto flex justify-center relative w-[98%] overflow-hidden">
-                <video src="./images/bg-video.mp4" class="h-full w-full object-cover rounded-xl" muted autoplay loop></video>
+                <video src="./images/bg-video.mp4" class="h-full w-full object-cover rounded-xl" muted autoplay
+                    loop></video>
                 <div class="overlay absolute z-0 bg-zinc-800 opacity-50 h-full w-full rounded-xl"></div>
-                <div class="hero-content px-4 py-20 lg:py-10 absolute bottom-0 rounded-xl h-[60%] lg:h-[60%] w-full flex flex-col justify-end">
+                <div
+                    class="hero-content px-4 py-20 lg:py-10 absolute bottom-0 rounded-xl h-[60%] lg:h-[60%] w-full flex flex-col justify-end">
                     <div class="lg:px-8 ">
                         <div class=" overflow-hidden flex items-center gap-2">
                             <div class="small-heading h-2 w-2 bg-white rounded-full"></div>
@@ -100,7 +180,8 @@
 
         <section class="flex flex-col lg:flex-row justify-between py-20 px-[5%] bg-primary">
             <div class="lg:w-1/2 flex items-start">
-                <h3 class="worst-decision text-secondary text-4xl font-semibold">YOUR WORST DECISIONS ARE <br> THOSE THAT YOU MAKE
+                <h3 class="worst-decision text-secondary text-4xl font-semibold">YOUR WORST DECISIONS ARE <br> THOSE
+                    THAT YOU MAKE
                     ALONE
                 </h3>
             </div>
@@ -188,7 +269,8 @@
             class="faq-section bg-primary relative flex flex-col lg:flex-row items-start pt-[5%] pb-[15%] px-[5%] mt-32">
             <div class="lg:w-1/2">
                 <div class="">
-                    <h3 class="faq-heading text-secondary font-semibold text-4xl lg:text-6xl  lg:leading-[5rem]">Is a Peer Advisory
+                    <h3 class="faq-heading text-secondary font-semibold text-4xl lg:text-6xl  lg:leading-[5rem]">Is a
+                        Peer Advisory
                         Council for you?
                     </h3>
                 </div>
@@ -257,7 +339,8 @@
 
         <section class="flex flex-col lg:flex-row justify-between py-16 px-[5%] bg-white">
             <div class="lg:w-1/2 flex flex-col items-start">
-                <h3 class="time-heading text-primary text-4xl font-semibold uppercase">Proven Effective <br> time and time again
+                <h3 class="time-heading text-primary text-4xl font-semibold uppercase">Proven Effective <br> time and
+                    time again
                 </h3>
                 <div class="divider"></div>
             </div>
@@ -268,15 +351,15 @@
                     growth. Yours could be next.
                 </p>
                 <div class="free-btn mt-5">
-                <a href="https://bit.ly/30minutecallwithjulie" target="_blank"
-                    class="py-3 px-6 text-white rounded-full bg-primary mt-10 hover:bg-transparent hover:text-primary duration-300 border-[1px] border-primary">Schedule
-                    a call</a>
+                    <a href="https://bit.ly/30minutecallwithjulie" target="_blank"
+                        class="py-3 px-6 text-white rounded-full bg-primary mt-10 hover:bg-transparent hover:text-primary duration-300 border-[1px] border-primary">Schedule
+                        a call</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-primary flex flex-col lg:flex-row px-[5%] lg:px-[10%] py-20 gap-20">
+    <!-- <footer class="bg-primary flex flex-col lg:flex-row px-[5%] lg:px-[10%] py-20 gap-20">
         <div>
             <h4 class="text-secondary text-4xl font-medium">Browse Our Website</h4>
             <div class="divider"></div>
@@ -347,11 +430,87 @@
                 <img src="./images/LinkedIn-transparent.png" class="w-[60px] lg:w-[100px]" alt="">
             </a>
         </div>
+    </footer> -->
+
+
+    <footer class="bg-primary flex flex-col lg:flex-row  px-[5%] lg:px-[10%] py-10 gap-20">
+        <div class="flex flex-col">
+            <div>
+                <h4 class="text-secondary text-4xl font-medium">Browse Our Website</h4>
+                <div class="divider"></div>
+                <ul class="footer-1 flex gap-5 flex-col md:flex-row">
+
+                    <li>
+                        <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease" href="">Peer Advisory Council</a>
+                    </li>
+                    <li>
+                        <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease" href="./connections.html">Quadrivium Connections</a>
+                    </li>
+                    <li>
+                        <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease" href="./business-academy.html">One to One Coaching</a>
+                    </li>
+
+                    <li>
+                        <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease" href="./meet-julie.html">Meet Julie</a>
+                    </li>
+                    <li>
+                        <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease" href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-10">
+                <h4 class="text-secondary text-4xl font-medium">Contact Information</h4>
+                <div class="divider"></div>
+                <ul class="footer-2 flex gap-10 flex-col md:flex-row">
+                    <div class="flex flex-col">
+                    <li>
+                        <a href="">Phone : <span class="text-secondary font-medium">(513) 659-5728</span></a>
+                    </li>
+                    <li>
+                        <a href="mailto:julie@quadrivium-advisors.com">Email: <span
+                                class="text-secondary font-medium">julie@quadrivium-advisors.com</span></a>
+                    </li>
+                   </div>
+                    <li>
+                        <a href="">Address: <span class="text-secondary font-medium">4555 Lake Forest Drive
+                                <br> <br>
+                                Suite 650
+                                <br> <br>
+                                Cincinnati, Ohio 45242</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex justify-start flex-col md:flex-row gap-10 md:gap-20">
+            <div>
+                <h4 class="text-secondary text-4xl font-medium">Our <br class="hidden lg:block"> Location </h4>
+                <div class="divider"></div>
+                <div class="mt-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.5461818453114!2d-84.3812481!3d39.2531724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884053c41b6b57c1%3A0x83f8ba4e1b9ba9a9!2s4555%20Lake%20Forest%20Dr%20Suite%20650%2C%20Cincinnati%2C%20OH%2045242%2C%20USA!5e0!3m2!1sen!2sin!4v1727641266842!5m2!1sen!2sin"
+                        class="w-full lg:w-[220px]" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>  
+            <div class="flex md:flex-col justify-center items-center  gap-6">
+                <a target="_blank" href="https://www.facebook.com/QuadriviumAdvisorsInc/">
+                    <img src="./images/facebook.webp" class="w-[25px] md:w-[50px]" alt="">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/julie.rowland45236/">
+                    <img src="./images/instagram.webp" class="w-[25px] md:w-[50px]" alt="">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/company/quadrivium-advisors-inc/">
+                    <img src="./images/linkedin.webp" class="w-[25px] md:w-[50px]" alt="">
+                </a>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
+
     <script src="script.js"></script>
 </body>
 
