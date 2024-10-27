@@ -64,6 +64,8 @@ header{
   transform: translateX(0);
 }
 
+/* hero */
+
 .hero {
   background: linear-gradient(to bottom right, transparent 50%, #ebe87a 100%);
   z-index: 1;
