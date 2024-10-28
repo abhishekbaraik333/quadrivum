@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
     item.classList.add("active"); // Open the specific FAQ item
   };
 
-  // Intersection Observer to observe when the first FAQ comes into the viewport
+  // Intersection Observer to observe when the first FAQ reaches 80% of the viewport from the top
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          toggleFaqItem(firstFaqItem); // Open the first FAQ when it comes into view
+          toggleFaqItem(firstFaqItem); // Open the first FAQ when it is 80% from the top
           observer.unobserve(entry.target); // Stop observing once opened
         }
       });
     },
-    { threshold: 0.5 } // Adjust visibility threshold as needed
+    { rootMargin: "-80% 0px 0px 0px" } // 80% offset from the top of the viewport
   );
 
   // Observe the first FAQ item
