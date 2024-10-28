@@ -30,35 +30,26 @@
 </head>
 
 <body>
+
+   
     <header class="fixed top-0 w-full z-[1000]">
 
-        <div class="py-6 flex items-center justify-between px-[4%]">
-            <a href="./index.html">
-                <img src="./images/logo.webp" width="200" alt="">
+        <div class="py-2 flex items-center justify-center px-[4%]">
+
+            <a class="w-full flex lg:justify-center" href="./index.html">
+                <img src="./images/logo.webp" class="lg:w-[550px] md:w-[400px] w-[250px]" alt="">
             </a>
-            <!-- desktop navbar -->
-            <nav class="desktop-menu text-white hidden lg:flex gap-5 items-center">
-                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium" href="./business-academy.html">One
-                    to One Coaching </a>
-                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium" href="./index.html">Peer Advisory
-                    Council</a>
-                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5"
-                    href="./connections.html">Quadrivium Connections</a>
-                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5" href="#">Blog</a>
-                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5" href="./meet-julie.html">Meet
-                    Julie</a>
-                <a class="hover:scale-[1.05] duration-200 ease text-sm font-medium mr-5" href="#">Contact</a>
-            </nav>
+
 
             <button id="hamburger" class="lg:hidden flex flex-col gap-1.5 relative z-[90]">
-                <span class="w-6 h-0.5 bg-secondary active transition-all duration-300"></span>
-                <span class="w-6 h-0.5 bg-secondary transition-all duration-300"></span>
-                <span class="w-6 h-0.5 bg-secondary transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-primary active transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-primary transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-primary transition-all duration-300"></span>
             </button>
 
             <!-- mobile navbar -->
             <nav id="mobile-nav"
-                class="fixed z-[99] p-4 pt-10 inset-x-0 top-20 h-1/2 bg-black transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col gap-5 justify-start items-start text-2xl text-white lg:text-lg">
+                class="fixed z-[99] p-4 pt-5 inset-x-0 top-16 md:top-24 h-[60%] bg-black transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col gap-5 justify-start items-start text-2xl text-primary lg:text-lg">
                 <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  "
                     href="./business-academy.html">One to One Coaching</a>
                 <a class="hover:scale-[1.1] duration-200 ease text-xl  font-semibold " href="./index.html">Peer Advisory
@@ -69,75 +60,89 @@
                 <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="./meet-julie.html">Meet
                     Julie</a>
                 <a class="hover:scale-[1.1] duration-200 ease text-xl font-semibold  " href="#">Contact</a>
+                <div class="">
+                    <a href="https://bit.ly/30minutecallwithjulie" target="_blank"
+                        class="py-2 px-3 text-white rounded-full bg-primary hover:bg-transparent hover:text-primary duration-300 border-[1px] border-primary text-base">Schedule
+                        a call</a>
+                </div>
             </nav>
+        </div>
+        <div>
+            <div class="lg:flex hidden px-[5%] items-center justify-between gap-4 py-2 text-primary font-semibold">
+                <a href="tel:(513) 659-5728" class="hover:underline ">(513) 659-5728</a>
+                <p class="text-primary font-semibold  text-start">
+                    4555 Lake Forest Drive
+                    Suite 650
+                </p>
+
+                <a href="mailto: julie@quadrivium-advisors.com" class="hover:underline ">
+                    julie@quadrivium-advisors.com</a>
+
+
+            </div>
+
+        </div>
+        <div>
+            <!-- desktop navbar -->
+            <nav
+                class="desktop-menu bg-primary text-white py-5 hidden lg:flex gap-5 items-center justify-between px-20">
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium"
+                    href="./index.html">Peer Advisory
+                    Council</a>
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium mr-5"
+                    href="./connections.html">Quadrivium Connections</a>
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium"
+                    href="./business-academy.html">One
+                    to One Coaching </a>
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium mr-5"
+                    href="./meet-julie.html">Meet
+                    Julie</a>
+                <a class="hover:scale-[1.05] hover:text-secondary duration-200 ease text-base font-medium mr-5"
+                    href="#">Contact</a>
+            </nav>
+
+
         </div>
     </header>
 
-    <main>
+    <main class="max-w-[2000px] mx-auto">
 
         <!-- hero -->
-        <section class="hero h-[100vh] pt-[6rem]">
-            <div class="h-[98%] my-auto mx-auto flex justify-center relative w-[98%] overflow-hidden">
-                <video src="./images/file.mp4" poster="./images/3f1b68_1482b975a2c244f08a5c210758a0b452f000.webp"
-                    class="h-full w-full object-cover rounded-xl" muted autoplay loop></video>
-                <div class="overlay absolute z-0 bg-zinc-800 opacity-50 h-full w-full rounded-xl"></div>
-                <div class="hero-content px-4 lg:py-10 py-20 absolute bottom-0 rounded-xl h-[60%] lg:h-[50%] w-full flex flex-col justify-end">
-                    <div class="lg:px-8 ">
-                        <div class=" overflow-hidden flex items-center gap-2">
-                            <div class="small-heading h-2 w-2 bg-white rounded-full"></div>
-                            <span class=" small-heading text-white font-bold uppercase">Business Coaching</span>
-                        </div>
-                        <h1 class="title text-white text-4xl lg:text-7xl font-semibold">
-                            Quadrivium Connections
-                        </h1>
-                        <!-- <h2 class="sub-title text-xl lg:text-3xl text-white mt-3 font-semibold">
-                            Where Visionary Minds Converge
-                        </h2> -->
-                        <p class="para text-white mt-5 text-sm lg:text-lg font-medium">
-                            Quadrivium Network in Action brings together a coalition of like-minded individuals who
-                            <br>understand the power of networking. Build your business by capitalizing <br> on our
-                            state-of-the-art technology and monthly meetings.
-                        </p>
-                        <div class="free-btn mt-5 lg:mt-10">
-                            <a href="https://bit.ly/30minutecallwithjulie"
-                                class=" py-3 lg:py-3  px-6 lg:px-6 text-primary rounded-full bg-zinc-200 lg:mt-8 mt-3 text-sm lg:text-base hover:bg-transparent hover:text-secondary duration-300 border-[1px] border-secondary">Schedule
-                                a call</a>
-                        </div>
+        <section class="hero px-[8%] lg:h-[100vh] pt-[5.3rem] md:pt-[7rem] lg:pt-[15rem] pb-10 flex flex-col lg:flex-row justify-center items-start lg:items-center">
+
+            <div class="hero-content px-4 py-20 lg:py-10 rounded-xl lg:w-1/2 flex flex-col  justify-end ">
+                <div class="lg:px-8">
+                    <div class="overflow-hidden flex items-center gap-2">
+                        <div class="small-heading h-2 w-2 bg-primary rounded-full"></div>
+                        <span class=" small-heading text-primary  font-bold uppercase">Business Coaching</span>
+                    </div>
+                    <h1 class="title text-primary text-4xl md:text-7xl font-semibold mt-2">
+                        Quadrivium Network In Action
+                    </h1>
+                    <p class="para text-primary  mt-5 text-sm text-xl font-medium">
+                        Quadrivium Network in Action brings together a coalition of like-minded individuals who understand the power of networking. 
+                        <br> <br>
+                        Build your business by capitalizing on our state-of-the-art technology and monthly meetings.
+                      
+                    </p>
+                    <div class="free-btn mt-10">
+                        <a href="https://bit.ly/30minutecallwithjulie" target="_blank"
+                            class="py-3 px-6 text-white rounded-full bg-primary mt-10 hover:bg-transparent hover:text-primary duration-300 border-[1px] border-primary">Schedule
+                            a call</a>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section class="dropdown-container px-[5%] py-10">
-            <div class=" flex flex-col items-start">
-                <h3 class="worst-decision text-primary text-3xl lg:text-6xl font-semibold ">Meet Our Members
-                </h3>
-                <div class="custom-select lg:mt-10 mt-10">
-                    <div class="select-selected flex justify-between items-center text-white">Select Member <i
-                            class="fa fa-caret-down text-white" aria-hidden="true"></i>
-                    </div>
-                    <div class="select-options">
-                        <a href="#member1" class="select-option">Matthew Daniels - Financial Advisor</a>
-                        <a href="#member2" class="select-option">Marc Benson - Insurance Agent</a>
-                        <a href="#member3" class="select-option">Julie Rowland - Business Coach</a>
-                        <a href="#member4" class="select-option">Ren Overmyer - Director of Design</a>
-                        <a href="#member5" class="select-option">Bob Turner - Digital Marketing</a>
-                        <a href="#member6" class="select-option">Robin Robinson - Founder & CEO</a>
-                        <a href="#member7" class="select-option">Sarah Mangold - Mobile Flooring store</a>
-                        <a href="#member8" class="select-option">Dan Keck - Fractional CFO</a>
-                        <a href="#member9" class="select-option">Ruth - Licensensed Health and Life</a>
-                        <a href="#member10" class="select-option">Josh Owens - Junk Removal</a>
-                        <a href="#member11" class="select-option">Patti McClister - Mortgage Lender</a>
-                        <a href="#member12" class="select-option">Trey Rangel - Commercial Printer</a>
-                        <a href="#member13" class="select-option">Delta Crabtree - Residential Realtor</a>
-                        <a href="#member14" class="select-option">Chris Beiler - Senior Advisor</a>
-                        <a href="#member15" class="select-option">Ravi Fernando - Engineering consultant</a>
-                        <a href="#member16" class="select-option">Tiffany Phillips - Virtual Receptionists</a>
-                    </div>
-                </div>
 
+            <div class="video-container flex justify-center relative overflow-hidden">
+                <video src="./images/file.mp4" class="h-full w-full object-cover" muted autoplay loop></video>
+                <div class="overlay absolute z-0 bg-zinc-800 opacity-30 h-full w-full rounded-xl"></div>
             </div>
+
+
         </section>
+
+      
 
         <section class="flex flex-col lg:flex-row justify-between py-20 px-[5%] bg-white">
             <div class="lg:w-1/2 flex items-start">
@@ -808,79 +813,56 @@
         </section>
     </main>
 
-    <footer class="bg-primary flex flex-col lg:flex-row px-[5%] lg:px-[10%] py-20 gap-20">
-        <div>
-            <h4 class="text-secondary text-4xl font-medium">Browse Our Website</h4>
-            <div class="divider"></div>
-            <ul class="footer-1">
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="./business-academy.html">One to One Coaching</a>
-                </li>
-                <li>
-                    <a href="">Peer Advisory Council</a>
-                </li>
-                <li>
-                    <a href="./connections.html">Quadrivium Connections</a>
-                </li>
-                <li>
-                    <a href="">Blog</a>
-                </li>
-                <li>
-                    <a href="./meet-julie.html">Meet Julie</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-secondary text-4xl font-medium">Contact Information</h4>
-            <div class="divider"></div>
-            <ul class="footer-2">
-                <li>
-                    <a href="">Phone : <span class="text-secondary font-medium">(513) 659-5728</span></a>
-                </li>
-                <li>
-                    <a href="mailto:julie@quadrivium-advisors.com">Email: <span
-                            class="text-secondary font-medium">julie@quadrivium-advisors.com</span></a>
-                </li>
-                <li>
-                    <a href="">Address: <span class="text-secondary font-medium">4555 Lake Forest Drive
-                            <br> <br>
-                            Suite 650
-                            <br> <br>
-                            Cincinnati, Ohio 45242</span></a>
-                </li>
+    <footer class="bg-primary flex flex-col lg:flex-row justify-center px-[5%] lg:px-[10%] py-10 gap-20">
+        <div class="flex flex-col">
+           
+            <div class="">
+                <h4 class="text-secondary text-4xl font-medium">Contact Information</h4>
+                <div class="divider"></div>
+                <ul class="footer-2 flex gap-10 flex-col md:flex-row">
+                    <div class="flex flex-col">
+                        <li>
+                            <a href="">Phone : <span class="text-secondary font-medium">(513) 659-5728</span></a>
+                        </li>
+                        <li>
+                            <a href="mailto:julie@quadrivium-advisors.com">Email: <span
+                                    class="text-secondary font-medium">julie@quadrivium-advisors.com</span></a>
+                        </li>
+                        <li>
+                            <a href="">Address: <span class="text-secondary font-medium">4555 Lake Forest Drive  Suite 650
+                                <br>
+                                Cincinnati, Ohio 45242</span></a>
+                            </li>
+                        </div>
 
-            </ul>
-        </div>
-
-        <div>
-            <h4 class="text-secondary text-4xl font-medium">Our <br class="hidden lg:block"> Location </h4>
-            <div class="divider"></div>
-            <div class="mt-8">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.5461818453114!2d-84.3812481!3d39.2531724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884053c41b6b57c1%3A0x83f8ba4e1b9ba9a9!2s4555%20Lake%20Forest%20Dr%20Suite%20650%2C%20Cincinnati%2C%20OH%2045242%2C%20USA!5e0!3m2!1sen!2sin!4v1727641266842!5m2!1sen!2sin"
-                    class="w-full lg:w-[220px]" height="220" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </ul>
             </div>
         </div>
-        <div class="flex lg:flex-col justify-center items-center">
-            <a target="_blank" href="https://www.facebook.com/QuadriviumAdvisorsInc/">
-                <img src="./images/Facebook-transparent (1).png" class="w-[60px] lg:w-[100px]" alt="">
-            </a>
-            <a target="_blank" href="https://www.instagram.com/julie.rowland45236/">
-                <img src="./images/Instagram-transparent.png" class="w-[60px] lg:w-[100px]" alt="">
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/company/quadrivium-advisors-inc/">
-                <img src="./images/LinkedIn-transparent.png" class="w-[60px] lg:w-[100px]" alt="">
-            </a>
+
+        <div class="flex justify-start flex-col md:flex-row gap-10 md:gap-20">
+            <div>
+                <h4 class="text-secondary text-4xl font-medium">Our Location </h4>
+                <div class="divider"></div>
+                <div class="mt-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.5461818453114!2d-84.3812481!3d39.2531724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884053c41b6b57c1%3A0x83f8ba4e1b9ba9a9!2s4555%20Lake%20Forest%20Dr%20Suite%20650%2C%20Cincinnati%2C%20OH%2045242%2C%20USA!5e0!3m2!1sen!2sin!4v1727641266842!5m2!1sen!2sin"
+                        class="w-full lg:w-[250px]" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="flex md:flex-col justify-center items-center  gap-6">
+                <a target="_blank" href="https://www.facebook.com/QuadriviumAdvisorsInc/">
+                    <img src="./images/facebook.webp" class="w-[25px] md:w-[50px]" alt="">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/julie.rowland45236/">
+                    <img src="./images/instagram.webp" class="w-[25px] md:w-[50px]" alt="">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/company/quadrivium-advisors-inc/">
+                    <img src="./images/linkedin.webp" class="w-[25px] md:w-[50px]" alt="">
+                </a>
+            </div>
         </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 

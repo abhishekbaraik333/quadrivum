@@ -1,22 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
+  const firstFaqItem = faqItems[0]; // Select the first FAQ item
 
+  // Function to handle FAQ toggle
+  const toggleFaqItem = (item) => {
+    faqItems.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove("active"); // Close other FAQ items
+      }
+    });
+    item.classList.add("active"); // Open the specific FAQ item
+  };
+
+  // Intersection Observer to observe when the first FAQ comes into the viewport
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          toggleFaqItem(firstFaqItem); // Open the first FAQ when it comes into view
+          observer.unobserve(entry.target); // Stop observing once opened
+        }
+      });
+    },
+    { threshold: 0.5 } // Adjust visibility threshold as needed
+  );
+
+  // Observe the first FAQ item
+  observer.observe(firstFaqItem);
+
+  // Add click event listener to all FAQ items
   faqItems.forEach((item) => {
     const question = item.querySelector(".faq-question");
 
     question.addEventListener("click", () => {
-      // Close any previously opened FAQ item
-      faqItems.forEach((otherItem) => {
-        if (otherItem !== item) {
-          otherItem.classList.remove("active"); // Close others
-        }
-      });
-
-      // Toggle the clicked item
-      item.classList.toggle("active");
+      if (item.classList.contains("active")) {
+        item.classList.remove("active"); // Close the item if it's open
+      } else {
+        toggleFaqItem(item); // Open the clicked item
+      }
     });
   });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
