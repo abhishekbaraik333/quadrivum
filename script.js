@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburger.addEventListener("click", () => {
     mobileNav.classList.toggle("active");
     hamburger.classList.toggle('active');
-
   });
+
   close.addEventListener("click", () => {
     mobileNav.classList.toggle("active");
   });
@@ -93,6 +93,16 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 1,
     scrollTrigger: {
       trigger: ".worst-decision", // Trigger animation when .box enters the viewport
+      start: "top 80%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  gsap.from(".education-box", {
+    y:100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".education-box", // Trigger animation when .box enters the viewport
       start: "top 80%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
