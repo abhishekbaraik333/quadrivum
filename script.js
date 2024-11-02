@@ -107,6 +107,16 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  gsap.from(".contact-form", {
+    y:100,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".contact-form", // Trigger animation when .box enters the viewport
+      start: "top 80%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
   gsap.from(".why-join", {
     x: -120,
     opacity: 0,
