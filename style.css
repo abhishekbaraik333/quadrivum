@@ -505,6 +505,28 @@ ul:where([role="list"]) {
   position: relative;
 }
 
+.texts{
+  color: #EBE87A;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.arrow-1, .arrow-2, .arrow-3, .arrow-4, .arrow-5, .arrow-6, .arrow-7{  
+  /* animation: bounce 1s infinite linear alternate; */
+  scale: 1.5 ;
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0px);
+
+  }
+}
+
 /* Keyframes for the desktop scroll animation */
 @keyframes scroll {
   0% {
@@ -547,6 +569,13 @@ ul:where([role="list"]) {
   .testimonial-container {
     width: calc(300px * 6); /* Adjust this to the number of testimonials */
     animation: scrollMobile 60s linear infinite;
+  }
+  .texts{
+    font-size: 16px;
+  }
+  .arrow-1, .arrow-2, .arrow-3, .arrow-4, .arrow-5, .arrow-6, .arrow-7{  
+    /* animation: bounce 1s infinite linear alternate; */
+    scale: 1.3 ;
   }
 }
 

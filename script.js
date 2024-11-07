@@ -264,48 +264,245 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  gsap.from(".ti-1", {
-    x: -150,
-    delay:0.2,
+  
+  gsap.from(".text-1", {
+    y: 100,
     duration: 1,
     opacity: 0,
     scrollTrigger: {
-      trigger: ".ti-1", // Trigger animation when .box enters the viewport
+      trigger: ".text-1", // Trigger animation when .box enters the viewport
       start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
 
-  gsap.from(".ti-2", {
-    x: 150,
-    delay:0.2,
+  gsap.from(".text-2", {
+    y: 100,
     duration: 1,
     opacity: 0,
     scrollTrigger: {
-      trigger: ".ti-2", // Trigger animation when .box enters the viewport
-      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
-    },
-  });
-  gsap.from(".ti-3", {
-    x: -150,
-    delay:0.2,
-    duration: 1,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".ti-3", // Trigger animation when .box enters the viewport
+      trigger: ".text-2", // Trigger animation when .box enters the viewport
       start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
 
-  gsap.from(".ti-4", {
-    x: 150,
-    delay:0.2,
+  
+  gsap.from(".text-3", {
+    y: 100,
     duration: 1,
     opacity: 0,
     scrollTrigger: {
-      trigger: ".ti-4", // Trigger animation when .box enters the viewport
+      trigger: ".text-3", // Trigger animation when .box enters the viewport
       start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
     },
   });
+
+
+  gsap.from(".text-4", {
+    y: 100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".text-4", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  gsap.from(".text-5", {
+    y: 100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".text-5", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  
+  gsap.from(".text-6", {
+    y: 100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".text-6", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
+  
+  gsap.from(".text-7", {
+    y: 100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".text-7", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+  
+  // Create a GSAP timeline
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".arrow-1",
+      start: "top 90%", // Start animation when .arrow-6 is 90% from the top of the viewport
+    }
+  })
+  
+  .from(".arrow-1", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.out" // Initial animation easing
+  })
+  .to(".arrow-1", {
+    y: "-=20", // Move up slightly for the bounce
+    duration: 1,
+    repeat: -1, // Infinite bounce
+    yoyo: true, // Yoyo effect for the bounce
+    ease: "power1.inOut", // Easing for a smooth bounce
+  });
+
+  // Create a GSAP timeline
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".arrow-2",
+      start: "top 90%", // Start animation when .arrow-6 is 90% from the top of the viewport
+    }
+  })
+  
+  .from(".arrow-2", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.out" // Initial animation easing
+  })
+  .to(".arrow-2", {
+    y: "-=20", // Move up slightly for the bounce
+    duration: 1,
+    repeat: -1, // Infinite bounce
+    yoyo: true, // Yoyo effect for the bounce
+    ease: "power1.inOut", // Easing for a smooth bounce
+  });
+
+  // Create a GSAP timeline
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".arrow-3",
+      start: "top 90%", // Start animation when .arrow-6 is 90% from the top of the viewport
+    }
+  })
+  
+  .from(".arrow-3", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.out" // Initial animation easing
+  })
+  .to(".arrow-3", {
+    y: "-=20", // Move up slightly for the bounce
+    duration: 1,
+    repeat: -1, // Infinite bounce
+    yoyo: true, // Yoyo effect for the bounce
+    ease: "power1.inOut", // Easing for a smooth bounce
+  });
+
+  // Create a GSAP timeline
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".arrow-4",
+      start: "top 90%", // Start animation when .arrow-6 is 90% from the top of the viewport
+    }
+  })
+  
+  .from(".arrow-4", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.out" // Initial animation easing
+  })
+  .to(".arrow-4", {
+    y: "-=20", // Move up slightly for the bounce
+    duration: 1,
+    repeat: -1, // Infinite bounce
+    yoyo: true, // Yoyo effect for the bounce
+    ease: "power1.inOut", // Easing for a smooth bounce
+  });
+
+  // Create a GSAP timeline
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".arrow-5",
+      start: "top 90%", // Start animation when .arrow-6 is 90% from the top of the viewport
+    }
+  })
+  
+  .from(".arrow-5", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.out" // Initial animation easing
+  })
+  .to(".arrow-5", {
+    y: "-=20", // Move up slightly for the bounce
+    duration: 1,
+    repeat: -1, // Infinite bounce
+    yoyo: true, // Yoyo effect for the bounce
+    ease: "power1.inOut", // Easing for a smooth bounce
+  });
+
+  // Create a GSAP timeline
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".arrow-6",
+      start: "top 90%", // Start animation when .arrow-6 is 90% from the top of the viewport
+    }
+  })
+  
+  .from(".arrow-6", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.out" // Initial animation easing
+  })
+  .to(".arrow-6", {
+    y: "-=20", // Move up slightly for the bounce
+    duration: 1,
+    repeat: -1, // Infinite bounce
+    yoyo: true, // Yoyo effect for the bounce
+    ease: "power1.inOut", // Easing for a smooth bounce
+  });
+
+  // Create a GSAP timeline
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".arrow-7",
+      start: "top 90%", // Start animation when .arrow-6 is 90% from the top of the viewport
+    }
+  })
+  
+  .from(".arrow-7", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power1.out" // Initial animation easing
+  })
+  .to(".arrow-7", {
+    y: "-=20", // Move up slightly for the bounce
+    duration: 1,
+    repeat: -1, // Infinite bounce
+    yoyo: true, // Yoyo effect for the bounce
+    ease: "power1.inOut", // Easing for a smooth bounce
+  });
+
+  gsap.from(".home-schedule", {
+    y: 100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".home-schedule", // Trigger animation when .box enters the viewport
+      start: "top 90%", // Start the animation when the .box is 80% from the top of the viewport
+    },
+  });
+
 });
 
 
