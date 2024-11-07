@@ -533,6 +533,71 @@ ul:where([role="list"]) {
   grid-template-columns: repeat(2,1fr);
 }
 
+
+.fade {
+  position: absolute;
+  bottom: 0;
+  width: 100px; /* Width of the fade */
+  height: 70px;
+  pointer-events: none;
+}
+
+.fade-left {
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+/* General testimonial container */
+.testimonial-container {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  animation: scroll 20s linear infinite; 
+}
+
+.review-slider {
+  margin: 90px auto;
+  width: 80%; /* Full viewport width */
+  overflow: hidden; /* Hide the overflowing content */
+  white-space: nowrap; /* Prevent line breaks */
+  position: relative;
+}
+
+/* Keyframes for the desktop scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Keyframes for mobile scroll animation */
+@keyframes scrollMobile {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-300px * 6)); /* Adjust based on the number of testimonials */
+  }
+}
+
+
 @media (max-width: 640px) {
   .card-container {
     grid-template-columns: repeat(1, 1fr);
@@ -543,6 +608,17 @@ ul:where([role="list"]) {
   }
   .faq-answer p {
     font-size: 14px;
+  }
+
+  .review-slider {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  /* Ensure container has correct width on mobile */
+  .testimonial-container {
+    width: calc(300px * 6); /* Adjust this to the number of testimonials */
+    animation: scrollMobile 40s linear infinite;
   }
 }
 
