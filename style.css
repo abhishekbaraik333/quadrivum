@@ -566,7 +566,7 @@ ul:where([role="list"]) {
   display: flex;
   align-items: start;
   gap: 15px;
-  animation: scroll 20s linear infinite; 
+  animation: scroll 40s linear infinite; 
 }
 
 .review-slider {
@@ -618,7 +618,7 @@ ul:where([role="list"]) {
   /* Ensure container has correct width on mobile */
   .testimonial-container {
     width: calc(300px * 6); /* Adjust this to the number of testimonials */
-    animation: scrollMobile 40s linear infinite;
+    animation: scrollMobile 60s linear infinite;
   }
 }
 
