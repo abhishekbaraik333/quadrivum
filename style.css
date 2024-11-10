@@ -489,21 +489,12 @@ ul:where([role="list"]) {
   );
 }
 
-/* General testimonial container */
-.testimonial-container {
-  display: flex;
-  align-items: start;
-  gap: 15px;
-  animation: scroll 40s linear infinite; 
+.swiper {
+  width: 100%;
+  max-width: 1200px; 
+  margin: auto;
 }
 
-.review-slider {
-  margin: 90px auto;
-  width: 80%; /* Full viewport width */
-  overflow: hidden; /* Hide the overflowing content */
-  white-space: nowrap; /* Prevent line breaks */
-  position: relative;
-}
 
 .texts{
   color: #EBE87A;
@@ -515,36 +506,6 @@ ul:where([role="list"]) {
 .arrow-1, .arrow-2, .arrow-3, .arrow-4, .arrow-5, .arrow-6, .arrow-7{  
   /* animation: bounce 1s infinite linear alternate; */
   scale: 1.5 ;
-}
-
-@keyframes bounce {
-  0%{
-    transform: translateY(10px);
-  }
-  100%{
-    transform: translateY(0px);
-
-  }
-}
-
-/* Keyframes for the desktop scroll animation */
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Keyframes for mobile scroll animation */
-@keyframes scrollMobile {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(calc(-300px * 6)); /* Adjust based on the number of testimonials */
-  }
 }
 
 
