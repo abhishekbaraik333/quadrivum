@@ -1,39 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const swiper = new Swiper('.swiper', {
-      loop: true, // Enables infinite loop mode
-      spaceBetween: 20, // Space between slides
-      autoplay: {
-          delay: 5000, // 3 seconds between slides
-          disableOnInteraction: false, // Autoplay continues even after interaction
-      },
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-      // Responsive breakpoints
-      breakpoints: {
-          // When window width is >= 0px
-          0: {
-              slidesPerView: 1, // 1 slide for mobile devices
-          },
-          // When window width is >= 768px
-          768: {
-              slidesPerView: 2, // 2 slides for tablets (iPad)
-          },
-          // When window width is >= 1024px
-          1024: {
-              slidesPerView: 3, // 3 slides for desktop
-          }
-      }
-  });
-
-
-
   const faqItems = document.querySelectorAll(".faq-item");
   const firstFaqItem = faqItems[0]; // Select the first FAQ item
 
