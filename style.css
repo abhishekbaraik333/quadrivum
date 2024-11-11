@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
   --primary:#0C3C60;
 }
@@ -493,6 +497,7 @@ ul:where([role="list"]) {
   width: 100%;
   max-width: 1200px; 
   margin: auto;
+  padding: 60px 0% !important;
 }
 
 
@@ -537,6 +542,9 @@ ul:where([role="list"]) {
   .arrow-1, .arrow-2, .arrow-3, .arrow-4, .arrow-5, .arrow-6, .arrow-7{  
     /* animation: bounce 1s infinite linear alternate; */
     scale: 1.3 ;
+  }
+  .swiper{
+    padding: 60px 10% !important;
   }
 }
 
